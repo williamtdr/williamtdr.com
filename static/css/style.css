@@ -1,0 +1,165 @@
+html, body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+	overflow-x: hidden;
+	color: white;
+}
+
+.animsition {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+.avatar {
+	width: 180px;
+	height: 180px;
+	background-image: url("http://cdn.williamtdr.com/avatar.png");
+	background-size: 100% 100%;
+	border-radius: 90px;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+.about {
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 1.4;
+}
+
+.name {
+	font-size: 1.2em;
+}
+
+.username {
+	color: #bdc3c7;
+}
+
+#sidebar {
+	width: 200px;
+	height: 100%;
+	background-color: #2c3e50;
+	color: #ecf0f1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2000;
+}
+
+.social-links {
+	width: 200px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.social-links > a > .fa {
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.social-links > a > .fa:hover {
+	color: white;
+}
+
+.description {
+	margin-top: 10px;
+	font-size: 0.8em;
+}
+
+.project > img {
+	width: 100%;
+}
+
+#content {
+	width: calc(100% - 220px);
+	margin-left: 200px;
+	padding: 10px;
+	z-index: 2000;
+}
+
+.project {
+	display: inline-block;
+	width: 400px;
+}
+
+.fa-twitter {
+	color: #3498db;
+}
+
+.fa-stack-overflow {
+	color: #e67e22;
+}
+
+.fa-github {
+	color: #95a5a6;
+}
+
+.fa-envelope-o {
+	color: #2ecc71;
+}
+
+.mobile-header {
+	display: none;
+}
+
+.alert-danger {
+	background-color: #c0392b;
+}
+
+.alert {
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+	.mobile-header {
+		display: block;
+	}
+
+	.mobile-header > .avatar {
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		border-radius: 32px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		float: left;
+	}
+
+	.name {
+		padding-top: 20px;
+	}
+
+	.username {
+		margin-bottom: 25px;
+	}
+
+	.description {
+		padding-right: 20px;
+	}
+
+	.social-links {
+		text-align: left;
+		margin-left: 10px;
+		margin-top: 15px;
+	}
+
+	.social-links > a > i {
+		font-size: 1.4em! important;
+	}
+
+	#sidebar {
+		display: none !important;
+	}
+
+	#content {
+		width: 100%;
+		margin-left: 0;
+	}
+}

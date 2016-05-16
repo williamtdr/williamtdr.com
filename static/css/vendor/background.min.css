@@ -1,0 +1,5 @@
+/*
+ * Background.css - Switchable page background with transition dimmable vignette.
+ * https://github.com/williamtdr/totem-static/blob/master/css/background.min.css
+ */
+#background_layer,#background_layer>div,#background_shader{position:fixed;left:0;top:0;width:100%;height:100%}#background_shader{background:radial-gradient(transparent,#000),100% center no-repeat fixed rgba(0,0,0,.7);margin:0;z-index:30;opacity:.7;transition:.25s}#background_layer{margin:0;opacity:0}#background_layer>div{-webkit-transition:opacity 1s ease-in-out;-moz-transition:opacity 1s ease-in-out;-o-transition:opacity 1s ease-in-out;transition:opacity 1s ease-in-out}#background_layer .transparent{opacity:0}#page_content{z-index:100}

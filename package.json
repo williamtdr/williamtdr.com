@@ -1,0 +1,23 @@
+{
+  "name": "williamtdr-com",
+  "version": "1.0.0",
+  "description": "Website for tdr.moe/williamtdr.com that showcases projects I've worked on.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "williamtdr",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3",
+    "lodash.get": "^4.3.0",
+    "lodash.set": "^4.2.0"
+  }
+}
