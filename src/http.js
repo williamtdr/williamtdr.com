@@ -1,25 +1,5 @@
-/*
- * Serves as the interface to the application.
- * Layout & template files can be found in views/, styles & client-side
- * scripts in static/. When modifying the CSS or JS, run gulp in a separate
- * process to rebuild the minified files the client loads.
- *
- * Url structure:
- * / - Prompt for user & region, then redirect
- *
- * /{region}/{summonerName} - URL the user sees for profiles. Redirects to /
- * with an error if the summoner was not found, otherwise shows basic summoner
- * info and loads data in from an AJAX request, to allow time for the API requests
- * to complete.
- *
- * /data/{region}/{summonerName} - AJAX request from the profile page. Gets and
- * formats data from Riot APIs, then injected as HTML into the profile page when
- * done.
- */
-
 var express = require("express"),
 	exphbs = require("express-handlebars"),
-	compression = require("compression"),
 	session = require("express-session"),
 	fs = require("fs"),
 	utils = require("./utils");
@@ -32,7 +12,6 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-app.use(compression());
 app.use(express.static("static"));
 
 app.use(session({
@@ -43,6 +22,37 @@ app.use(session({
 
 app.get("/", (req, res) => {
 	res.render("home");
+});
+
+app.param("id", function (req, res, next, id) {
+	res.locals.id = id;
+	next();
+});
+
+app.get("/project/:id", (req, res, next) => {
+	fs.readFile("data/projects/" + res.locals.id + "/project.json", "utf8", (err, data) => {
+		data = JSON.parse(data);
+		if(err)
+			return next();
+
+		res.locals.extra_styles = "/css/project.css";
+
+		data.id = res.locals.id;
+		res.locals = data;
+
+		fs.readFile("data/projects/" + res.locals.id + "/description.html", "utf8", (err, data) => {
+			res.locals.description = data;
+
+			res.render("project");
+		});
+	});
+});
+
+app.use((req, res) => {
+	res.locals.error = "404: File not found.";
+	res.locals.extra_styles = "/css/error.css";
+
+	res.status(404).render("error");
 });
 
 var ip = global.user_config.get("web_server.ip"),

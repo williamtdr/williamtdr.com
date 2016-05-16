@@ -1,0 +1,31 @@
+<div id="content" class="animsition zoom-in-sm project-content" data-animsition-in-duration="750">
+	<div id="breadcrumbs">
+		<a href="/">projects</a> >
+	</div>
+	<h1>{{name}}</h1>
+	{{#if yt_video}}
+		<iframe width="640" height="480" src="https://www.youtube.com/embed/{{yt_video}}" frameborder="0" allowfullscreen></iframe><br><br>
+	{{/if}}
+	<div id="description">
+		{{{description}}}
+	</div>
+	<br>
+	<span class="tag-header">Tools & Frameworks</span>
+	<div class="tag-group">
+	{{#each tools}}
+		<div class="tag">{{this}}</div>
+	{{/each}}
+	</div>
+	<span class="tag-header">Programming Languages</span>
+	<div class="tag-group">
+	{{#each languages}}
+		<div class="tag">{{this}}</div>
+	{{/each}}
+	</div>
+	<span class="tag-header">Tags</span>
+	<div class="tag-group">
+		{{#each tags}}
+			<div class="tag">{{this}}</div>
+		{{/each}}
+	</div>
+</div>

@@ -1,0 +1,17 @@
+#error > #header {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	color: #ff5343;
+}
+
+#error > a {
+	display: block;
+	margin-top: 15px;
+	color: #27ae60;
+	text-decoration: none;
+	transition: .25s;
+}
+
+#error > a:hover {
+	color: #2ecc71;
+}
