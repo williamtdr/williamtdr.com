@@ -117,11 +117,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-	.mobile-header {
-		display: block;
+	#sidebar {
+		position: relative;
+		width: 100%;
+		background-color: rgba(44, 62, 80, 0.4);
+		padding-bottom: 10px;
 	}
 
-	.mobile-header > .avatar {
+	.social-links a {
+		margin-right: 5px;
+	}
+
+	#sidebar > .avatar {
 		display: inline-block;
 		width: 64px;
 		height: 64px;
@@ -152,10 +159,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.social-links > a > i {
 		font-size: 1.4em! important;
-	}
-
-	#sidebar {
-		display: none !important;
 	}
 
 	#content {
