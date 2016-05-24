@@ -1,0 +1,7 @@
+{
+	"name": "Flex Scheduler",
+	"tools": ["bootstrap"],
+	"languages": ["php", "mysql"],
+	"tags": ["education"],
+	"source": "closed"
+}

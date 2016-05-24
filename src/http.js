@@ -24,18 +24,21 @@ app.get("/", (req, res) => {
 	res.render("home");
 });
 
-app.param("id", function (req, res, next, id) {
+app.param("id", (req, res, next, id) => {
 	res.locals.id = id;
 	next();
 });
 
 app.get("/project/:id", (req, res, next) => {
 	fs.readFile("data/projects/" + res.locals.id + "/project.json", "utf8", (err, data) => {
-		data = JSON.parse(data);
 		if(err)
 			return next();
 
-		res.locals.extra_styles = "/css/project.css";
+		data = JSON.parse(data);
+		data.extra_styles = "/css/project.css";
+		data.extra_scripts = [
+			"http://cdn.williamtdr.com/williamtdr.com/jquery.slides.min.js"
+		];
 
 		data.id = res.locals.id;
 		res.locals = data;

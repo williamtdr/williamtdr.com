@@ -1,0 +1,8 @@
+{
+	"name": "Harmony",
+	"yt_video": "ngrpQA8t5rM",
+	"tools": ["jQuery", "gulp", "express", "node.js", "google api", "konachan api"],
+	"languages": ["javascript"],
+	"tags": ["codeday", "hackathon", "voice control"],
+	"source": "closed"
+}

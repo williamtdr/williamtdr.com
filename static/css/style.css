@@ -87,6 +87,31 @@ h1, h2, h3, h4, h5, h6 {
 	width: 400px;
 }
 
+.project > a {
+	text-decoration: none;
+}
+
+.project-footer {
+	height: 30px;
+	padding: 5px 10px;
+	background-color: black;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.project-name {
+	display: inline-block;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	color: #3498db;
+	transition: .25s;
+}
+
+.project-name:hover {
+	color: #2ecc71;
+}
+
 .fa-twitter {
 	color: #3498db;
 }
@@ -101,6 +126,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .fa-envelope-o {
 	color: #2ecc71;
+}
+
+.hackathon-24h {
+	background-image: url("http://cdn.williamtdr.com/williamtdr.com/24h.png");
+	background-size: 100% 100%;
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+
+.icons {
+	float: right;
+	display: inline-block;
+}
+
+.icons > * {
+	margin-left: 10px;
+	color: white;
+	display: inline-block;
 }
 
 @media screen and (max-width: 768px) {

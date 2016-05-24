@@ -1,6 +1,6 @@
 {
 	"name": "Animatch",
-	"video": "http://cdn.williamtdr.com/williamtdr.com/animatch/immortals_full_readout.mp4",
+	"yt_video": "3A2Ipm35GdE",
 	"tools": ["jQuery", "gulp", "bootstrap"],
 	"languages": ["javascript"],
 	"tags": ["music", "algorithm", "codeday", "hackathon"],

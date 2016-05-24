@@ -4,15 +4,14 @@
 	<meta charset="UTF-8">
 	<title>williamtdr</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Lato:300,400" rel="stylesheet">
 	<link href="http://cdn.williamtdr.com/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/dist/tdr.min.css" rel="stylesheet">
 	{{#each extra_styles}}
-		<link href="{{this}}" rel="stylesheet">
+		<link href="{{{this}}}" rel="stylesheet">
 	{{/each}}
 </head>
 <body>
-
 <div id="sidebar" class="animsition fade-in-left-sm" data-animsition-in-duration="750">
 	<div class="avatar"></div>
 	<div class="about">
@@ -32,4 +31,7 @@
 
 </body>
 <script src="/dist/tdr.min.js"></script>
+{{#each extra_scripts}}
+	<script src="{{{this}}}" type="text/javascript"></script>
+{{/each}}
 </html>
