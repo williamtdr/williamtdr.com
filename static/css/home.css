@@ -1,0 +1,164 @@
+#avatar {
+	width: 180px;
+	height: 180px;
+	background-image: url("http://cdn.williamtdr.com/avatar.png");
+	background-size: 100% 100%;
+	border-radius: 90px;
+	float: left;
+	display: inline-block;
+}
+
+.intro-heading {
+	font-family: "Lora", serif;
+	text-align: left;
+	text-transform: none;
+}
+
+#leading-heading {
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+#following-heading {
+	font-weight: 400;
+}
+
+.usage-instructions {
+	font-style: italic;
+	color: #95a5a6;
+	font-weight: 400;
+	font-size: 1.2em;
+	width: 600px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6;
+}
+
+#intro-left, #intro-right {
+	display: block;
+}
+
+#intro-left {
+	float: left;
+	margin-right: 30px;
+	min-height: 400px;
+}
+
+#intro-after {
+	margin-top: 90px;
+}
+
+#intro-right {
+	max-width: 600px;
+}
+
+#intro-right p {
+	text-align: left;
+	font-size: 1.2em;
+}
+
+.social-links {
+	text-align: left;
+}
+
+.social-links > a {
+	margin-right: 15px;
+}
+
+.social-links > a > .fa {
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.social-links > a > .fa:hover {
+	color: white;
+}
+
+.fa-twitter {
+	color: #3498db;
+}
+
+.fa-stack-overflow {
+	color: #e67e22;
+}
+
+.fa-github {
+	color: #95a5a6;
+}
+
+.fa-envelope-o {
+	color: #2ecc71;
+}
+
+.project {
+	display: inline-block;
+}
+
+.project > a {
+	text-decoration: none;
+}
+
+.project > a > img {
+	padding: 15px;
+	width: 100%;
+}
+
+.project-footer {
+	height: 50px;
+	padding: 5px 10px;
+	background-color: black;
+	margin-bottom: 10px;
+	text-decoration: none;
+	text-align: left;
+	width: 500px;
+	margin-top: 5px;
+}
+
+.project-name {
+	display: inline-block;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
+	color: #3498db;
+	transition: .25s;
+}
+
+.project-name:hover {
+	color: #2ecc71;
+}
+
+.hackathon-24h {
+	background-image: url("http://cdn.williamtdr.com/williamtdr.com/24h.png");
+	background-size: 100% 100%;
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+
+.icons {
+	float: right;
+	display: inline-block;
+}
+
+.project-image {
+	width: 500px;
+	height: 320px;
+	background-size: cover;
+	background-position: center;
+}
+
+.icons > * {
+	margin-left: 10px;
+	color: white;
+	display: inline-block;
+}
+
+.icons > .fa {
+	font-size: 25px;
+}
+
+li > a {
+	transition: .25s !important;
+}

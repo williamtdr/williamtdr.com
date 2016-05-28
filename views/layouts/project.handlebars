@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{#if name}}{{name}} · {{/if}}williamtdr</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link href="http://cdn.williamtdr.com/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/dist/tdr.min.css" rel="stylesheet">
+	<link href="/dist/tdr.project.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-brand" data-toggle="collapse" data-target=".navbar-collapse">
+				Project Gallery{{#if name}}<span class="breadcumb-sep"> > </span><span class="breadcrumb-nav">{{name}}</span> <span class="arrowhead">&#9660;</span>{{/if}}
+			</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" aria-expanded="false">
+			<ul class="nav navbar-nav">
+				{{#each projectsByAwesomeness}}
+				<li>
+					<a href="/project/{{{this.id}}}">{{this.name}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container -->
+</nav>
+
+{{{body}}}
+
+</body>
+<script src="/dist/tdr.min.js"></script>
+<script src="/dist/tdr.project.min.js"></script>
+</html>

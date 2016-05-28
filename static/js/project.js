@@ -1,8 +1,3 @@
-$("#link-email").click(function(ev) {
-	ev.preventDefault();
-	window.location.href = atob("bWFpbHRvOg==") + atob("d3RlZGVy") + "@" + atob("aHlkcmVvbi5jb20=");
-});
-
 $(document).ready(function() {
 	var slides = $("#slides");
 

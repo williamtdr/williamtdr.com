@@ -11,25 +11,49 @@ var gulp = require("gulp"),
 
 process.chdir("static");
 
-gulp.task("minify-css", function() {
-	return gulp.src(["css/vendor/*.css", "css/*.css"])
+gulp.task("minify-base-css", function() {
+	return gulp.src(["css/vendor/*.css", "css/style.css"])
 		.pipe(minifyCss({compatibility: "ie8"}))
 		.pipe(concat("tdr.min.css"))
 		.pipe(gulp.dest("dist"));
 });
 
-gulp.task("minify-js", function() {
-	return gulp.src(["js/vendor/jquery.min.js", "js/vendor/*.js", "js/*.js"])
+gulp.task("minify-home-css", function() {
+	return gulp.src(["css/grayscale.css", "css/home.css"])
+		.pipe(minifyCss({compatibility: "ie8"}))
+		.pipe(concat("tdr.home.min.css"))
+		.pipe(gulp.dest("dist"));
+});
+
+gulp.task("minify-project-css", function() {
+	return gulp.src(["css/project.css"])
+		.pipe(minifyCss({compatibility: "ie8"}))
+		.pipe(concat("tdr.project.min.css"))
+		.pipe(gulp.dest("dist"));
+});
+
+gulp.task("minify-base-js", function() {
+	return gulp.src(["js/vendor/jquery.min.js", "js/vendor/bootstrap.min.js"])
 		.pipe(uglify())
 		.pipe(concat("tdr.min.js"))
 		.pipe(gulp.dest("dist"));
 });
 
-gulp.task("default", ["minify-css", "minify-js"]);
-
-gulp.task("stop", ["minify-css", "minify-js"], function() {
-	process.exit();
+gulp.task("minify-home-js", function() {
+	return gulp.src(["js/vendor/jquery.easing.min.js", "js/grayscale.js", "js/home.js"])
+		.pipe(uglify())
+		.pipe(concat("tdr.home.min.js"))
+		.pipe(gulp.dest("dist"));
 });
+
+gulp.task("minify-project-js", function() {
+	return gulp.src(["js/vendor/jquery.slides.min.js", "js/project.js"])
+		.pipe(uglify())
+		.pipe(concat("tdr.project.min.js"))
+		.pipe(gulp.dest("dist"));
+});
+
+gulp.task("default", ["minify-base-css", "minify-home-css", "minify-project-css", "minify-base-js", "minify-home-js", "minify-project-js"]);
 
 var watcher = gulp.watch(["*.*", "css/**", "js/**"], ["default"]);
 watcher.on("change", function(event) {

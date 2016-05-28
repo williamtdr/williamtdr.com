@@ -1,10 +1,7 @@
-<div id="content" class="animsition zoom-in-sm project-content" data-animsition-in-duration="750">
-	<div id="breadcrumbs">
-		<a href="/">projects</a> >
-	</div>
+<div id="content" class="animsition zoom-in-sm project-content container" data-animsition-in-duration="750">
 	<h1>{{name}}</h1>
 	{{#if yt_video}}
-		<iframe width="640" height="480" src="https://www.youtube.com/embed/{{yt_video}}" frameborder="0" allowfullscreen></iframe><br><br>
+		<iframe width="640" height="480" src="https://www.youtube.com/embed/{{yt_video}}?modestbranding=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
 	{{/if}}
 	<div id="description">
 		{{{description}}}

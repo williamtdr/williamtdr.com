@@ -1,5 +1,10 @@
 {
 	"name": "Math Drill",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/math_drill.png",
+	"order": {
+		"time": 4,
+		"awesomeness": 2
+	},
 	"tools": ["phonegap", "jQuery"],
 	"languages": ["javascript"],
 	"tags": [],

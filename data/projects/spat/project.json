@@ -1,5 +1,10 @@
 {
 	"name": "Several People are Typing",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/spat.png",
+	"order": {
+		"time": 2,
+		"awesomeness": 1
+	},
 	"tools": [],
 	"languages": [],
 	"tags": [],

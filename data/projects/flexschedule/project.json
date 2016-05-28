@@ -1,5 +1,10 @@
 {
 	"name": "Flex Scheduler",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/flex_schedule.png",
+	"order": {
+		"time": 5,
+		"awesomeness": 3
+	},
 	"tools": ["bootstrap"],
 	"languages": ["php", "mysql"],
 	"tags": ["education"],

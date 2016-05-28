@@ -1,5 +1,10 @@
 {
 	"name": "Totem",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/totem.png",
+	"order": {
+		"time": 7,
+		"awesomeness": 9
+	},
 	"tools": ["gulp", "google api", "jQuery"],
 	"languages": ["javascript", "node.js", "php", "mysql", "css", "html"],
 	"tags": ["music"],

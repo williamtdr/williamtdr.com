@@ -1,5 +1,10 @@
 {
 	"name": "SlideAlive",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/slidealive.png",
+	"order": {
+		"time": 3,
+		"awesomeness": 6
+	},
 	"tools": [],
 	"languages": ["php", "mysql"],
 	"tags": ["codeday", "hackathon"],

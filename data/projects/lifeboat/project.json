@@ -1,5 +1,10 @@
 {
 	"name": "Lifeboat",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/lifeboat.png",
+	"order": {
+		"time": 1,
+		"awesomeness": 10
+	},
 	"tools": [],
 	"languages": ["php", "mysql", "aws", "bash"],
 	"tags": [],

@@ -1,6 +1,11 @@
 {
 	"name": "labyrinth14",
 	"yt_video": "VWAkilqSRpw",
+	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/labyrinth14.png",
+	"order": {
+		"time": 8,
+		"awesomeness": 5
+	},
 	"tools": ["websockets", "jQuery", "bootstrap", "express", "node.js", "gulp"],
 	"languages": ["javascript", "ES6", "C#"],
 	"tags": ["game", "codeday", "hackathon"],

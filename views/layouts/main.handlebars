@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>williamtdr</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Lato:300,400" rel="stylesheet">
+	<meta name="description" content="William Teder's personal website. Features projects, an assortment of useful tools, and biographical information.">
+	<meta name="author" content="williamtdr">
+	<title>williamtdr</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href="http://cdn.williamtdr.com/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/dist/tdr.min.css" rel="stylesheet">
-	{{#each extra_styles}}
-		<link href="{{{this}}}" rel="stylesheet">
-	{{/each}}
+	<link href="/dist/tdr.home.min.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
-<body>
-<div id="sidebar" class="animsition fade-in-left-sm" data-animsition-in-duration="750">
-	<div class="avatar"></div>
-	<div class="about">
-		<div class="name">William Teder</div>
-		<div class="username">williamtdr</div>
-		<div class="description">Full stack developer. I like building apps that scale. Lead developer of the Lifeboat Server Network from Aug 2013 - Oct 2015.</div>
-	</div>
-	<div class="social-links">
-		<a class="link-twitter" target="_blank" href="https://twitter.com/williamtdr"><i class="fa fa-twitter"></i></a>
-		<a class="link-stackoverflow" target="_blank" href="http://askubuntu.com/users/30405/william"><i class="fa fa-stack-overflow"></i></a>
-		<a class="link-github" target="_blank" href="https://github.com/williamtdr"><i class="fa fa-github"></i></a>
-		<a class="link-email" target="_blank"><i class="fa fa-envelope-o"></i></a>
-	</div>
-</div>
 
 {{{body}}}
 
-</body>
 <script src="/dist/tdr.min.js"></script>
-{{#each extra_scripts}}
-	<script src="{{{this}}}" type="text/javascript"></script>
-{{/each}}
+<script src="/dist/tdr.home.min.js"></script>
 </html>
