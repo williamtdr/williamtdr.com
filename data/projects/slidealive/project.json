@@ -5,8 +5,8 @@
 		"time": 3,
 		"awesomeness": 6
 	},
-	"tools": [],
-	"languages": ["php", "mysql"],
+	"tools": ["angularjs"],
+	"languages": ["php", "mysql", "python"],
 	"tags": ["codeday", "hackathon"],
 	"source": "open"
 }

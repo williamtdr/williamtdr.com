@@ -7,19 +7,19 @@
 		{{{description}}}
 	</div>
 	<br>
-	<span class="tag-header">Tools & Frameworks</span>
+	{{#if tools}}<span class="tag-header">Tools & Frameworks</span>{{/if}}
 	<div class="tag-group">
 	{{#each tools}}
 		<div class="tag">{{this}}</div>
 	{{/each}}
 	</div>
-	<span class="tag-header">Programming Languages</span>
+	{{#if languages}}<span class="tag-header">Programming Languages</span>{{/if}}
 	<div class="tag-group">
 	{{#each languages}}
 		<div class="tag">{{this}}</div>
 	{{/each}}
 	</div>
-	<span class="tag-header">Tags</span>
+	{{#if tags}}<span class="tag-header">Tags</span>{{/if}}
 	<div class="tag-group">
 	{{#each tags}}
 		<div class="tag">{{this}}</div>

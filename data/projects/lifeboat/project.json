@@ -1,12 +1,13 @@
 {
 	"name": "Lifeboat",
+	"yt_video": "Y2bxj6WYERE",
 	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/lifeboat.png",
 	"order": {
 		"time": 1,
 		"awesomeness": 10
 	},
-	"tools": [],
-	"languages": ["php", "mysql", "aws", "bash"],
+	"tools": ["aws", "ansible", "jQuery"],
+	"languages": ["php", "mysql", "html", "css", "bash"],
 	"tags": [],
 	"source": "closed"
 }

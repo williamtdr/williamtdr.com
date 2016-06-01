@@ -24,7 +24,7 @@
 			<ul class="nav navbar-nav">
 				{{#each projectsByAwesomeness}}
 				<li>
-					<a href="/project/{{{this.id}}}">{{this.name}}</a>
+					<a href="/project/{{{this.id}}}">{{#if this.short_title}}{{this.short_title}}{{else}}{{this.name}}{{/if}}</a>
 				</li>
 				{{/each}}
 			</ul>
