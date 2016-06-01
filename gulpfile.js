@@ -33,7 +33,7 @@ gulp.task("minify-project-css", function() {
 });
 
 gulp.task("minify-base-js", function() {
-	return gulp.src(["js/vendor/jquery.min.js", "js/vendor/bootstrap.min.js"])
+	return gulp.src(["js/vendor/jquery.min.js", "js/vendor/bootstrap.min.js", "js/analytics.js"])
 		.pipe(uglify())
 		.pipe(concat("tdr.min.js"))
 		.pipe(gulp.dest("dist"));
