@@ -12,14 +12,14 @@ var gulp = require("gulp"),
 process.chdir("static");
 
 gulp.task("minify-base-css", function() {
-	return gulp.src(["css/vendor/*.css", "css/style.css"])
+	return gulp.src(["css/vendor/bootstrap.min.css", "css/style.css"])
 		.pipe(minifyCss({compatibility: "ie8"}))
 		.pipe(concat("tdr.min.css"))
 		.pipe(gulp.dest("dist"));
 });
 
 gulp.task("minify-home-css", function() {
-	return gulp.src(["css/grayscale.css", "css/home.css"])
+	return gulp.src(["css/vendor/animsition.min.css", "css/grayscale.css", "css/home.css"])
 		.pipe(minifyCss({compatibility: "ie8"}))
 		.pipe(concat("tdr.home.min.css"))
 		.pipe(gulp.dest("dist"));
@@ -40,7 +40,7 @@ gulp.task("minify-base-js", function() {
 });
 
 gulp.task("minify-home-js", function() {
-	return gulp.src(["js/vendor/jquery.easing.min.js", "js/grayscale.js", "js/home.js"])
+	return gulp.src(["js/vendor/animsition.min.js", "js/vendor/jquery.easing.min.js", "js/grayscale.js", "js/home.js"])
 		.pipe(uglify())
 		.pipe(concat("tdr.home.min.js"))
 		.pipe(gulp.dest("dist"));
