@@ -163,7 +163,52 @@ li > a {
 	transition: .25s !important;
 }
 
+#bio-container > div > h3 {
+	color: #ecf0f1;
+	text-transform: none;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+#bio-container > div > {
+	width: 100%;
+}
+
+#about {
+	padding-top: 50px !important;
+}
+
+.bio-listing {
+	font-family: "Lato", sans-serif;
+	padding-left: 0;
+	list-style-type: none;
+	text-align: left;
+}
+
+.bio-listing {
+	margin-bottom: 30px;
+}
+
+.bio-listing > li {
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+
+.bio-content {
+	margin-top: 5px;
+}
+
+.bio-heading {
+	color: #bdc3c7;
+	font-size: 1.4em;
+}
+
 @media(max-width: 768px) {
+	#about {
+		height: auto;
+		padding-bottom: 15px;
+	}
+
 	.project {
 		width: 100%;
 	}

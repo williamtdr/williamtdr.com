@@ -264,12 +264,13 @@ a:focus {
 }
 
 #about {
-	background: url("http://cdn.williamtdr.com/williamtdr.com/img/codeday.jpg") no-repeat center center scroll;
+	background: url("http://cdn.williamtdr.com/williamtdr.com/img/bio_backdrop.jpg") no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-	height: 800px;
+	height: 600px;
+	width: 100%;
 }
 
 #map {
