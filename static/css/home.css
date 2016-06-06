@@ -162,3 +162,24 @@
 li > a {
 	transition: .25s !important;
 }
+
+@media(max-width: 768px) {
+	.project {
+		width: 100%;
+	}
+
+	.project-image {
+		width: 100%;
+	}
+
+	.usage-instructions {
+		width: auto;
+		text-align: left;
+	}
+}
+
+@media(max-width: 500px) {
+	.project-image {
+		height: 280px;
+	}
+}
