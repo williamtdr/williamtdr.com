@@ -1,17 +1,17 @@
 {
 	"name": "IoWA",
 	"link": "http://iowa.tdr.moe",
-	"thumbnail": "http://cdn.williamtdr.com/williamtdr.com/thumbnail/iowa.png",
+	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/iowa.png",
 	"order": {
 		"time": 9,
 		"awesomeness": 7
 	},
 	"github": "https://github.com/williamtdr/iowa",
 	"screenshots": [
-		"http://cdn.williamtdr.com/williamtdr/1.png",
-		"http://cdn.williamtdr.com/williamtdr/2.png",
-		"http://cdn.williamtdr.com/williamtdr/3.png",
-		"http://cdn.williamtdr.com/williamtdr/4.png"
+		"http://cdn.tdr.moe/williamtdr/1.png",
+		"http://cdn.tdr.moe/williamtdr/2.png",
+		"http://cdn.tdr.moe/williamtdr/3.png",
+		"http://cdn.tdr.moe/williamtdr/4.png"
 	],
 	"tools": ["jQuery", "gulp", "bootstrap", "express", "node.js"],
 	"languages": ["javascript", "ES6"],

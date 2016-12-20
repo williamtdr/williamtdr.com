@@ -1,5 +1,9 @@
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+
+body, html {
+	background-color: #1d1d1d;
 }
 
 nav {
@@ -12,8 +16,17 @@ nav {
 
 .arrowhead {
 	font-size: 0.4em;
-	color: #bdc3c7;
+	color: #30e180;
+	margin-left: 2px;
 	vertical-align: 15%;
+}
+
+.arrowhead:after {
+	content: "\25BC";
+}
+
+.arrowhead-up:after {
+	content: "\25B2";
 }
 
 a {
@@ -41,6 +54,8 @@ a:hover {
 
 .breadcumb-sep {
 	color: #bdc3c7;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .breadcrumb-nav {
@@ -58,8 +73,8 @@ a:hover {
 }
 
 h1 {
-	margin: 10px 0;
-	color: #1abc9c;
+	margin: 20px 0;
+	color: #c0e1a4;
 }
 
 ul {
@@ -68,11 +83,16 @@ ul {
 }
 
 .tag-header {
-	color: #2980b9;
+	color: #94e3e0;
 	font-weight: 700;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 	margin-top: 10px;
 	display: block;
+}
+
+.tag-group {
+	display: block;
+	margin-bottom: 20px;
 }
 
 .tag {
@@ -114,4 +134,9 @@ ul {
 	background-color: black;
 	border: none;
 	outline: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: #1d1d1d;
+	color: white;
 }

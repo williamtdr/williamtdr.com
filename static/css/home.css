@@ -6,7 +6,7 @@
 #avatar {
 	width: 180px;
 	height: 180px;
-	background-image: url("http://cdn.williamtdr.com/avatar.png");
+	background-image: url("http://cdn.tdr.moe/avatar.png");
 	background-size: 100% 100%;
 	border-radius: 90px;
 	float: left;
@@ -14,30 +14,35 @@
 }
 
 .intro-heading {
-	font-family: "Lora", serif;
+	font-family: "Open Sans", serif;
 	text-align: left;
 	text-transform: none;
 }
 
 #leading-heading {
 	font-weight: 700;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 #following-heading {
 	font-weight: 400;
 }
 
+.project-section > h1 {
+	margin-bottom: 18px !important;
+}
+
 .usage-instructions {
-	font-style: italic;
-	color: #95a5a6;
+	color: #94e3e0;
 	font-weight: 400;
 	font-size: 1.2em;
 	width: 600px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	line-height: 1.6;
+	line-height: 1.8;
+	text-transform: none;
+	margin-bottom: 50px;
 }
 
 #intro-left, #intro-right {
@@ -47,7 +52,7 @@
 #intro-left {
 	float: left;
 	margin-right: 30px;
-	min-height: 400px;
+	color: #E5E5E5;
 }
 
 #intro-after {
@@ -55,12 +60,14 @@
 }
 
 #intro-right {
-	max-width: 600px;
+	max-width: 500px;
+	margin-top: 50px;
 }
 
-#intro-right p {
+#intro-right > p {
 	text-align: left;
 	font-size: 1.2em;
+	margin-top: 20px;
 }
 
 .social-links {
@@ -78,7 +85,7 @@
 }
 
 .social-links > a > .fa:hover {
-	color: white;
+	color: #E5E5E5;
 }
 
 .fa-twitter {
@@ -98,7 +105,16 @@
 }
 
 .project {
-	display: inline-block;
+	width: calc(100% - 20px);
+	margin-bottom: 20px;
+	margin-left: 10px;
+	height: 260px;
+	display: block;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+	background-size: auto 100%;
+	background-position: center;
 }
 
 .project > a {
@@ -110,32 +126,58 @@
 	width: 100%;
 }
 
+.projects {
+	width: calc(100% - 20px);
+	margin-left: 10px;
+}
+
+.projects > div {
+	padding: 0;
+}
+
+.project-footer:before {
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)), rgba(0, 0, 0, 0) no-repeat 100% bottom fixed;
+	content: " ";
+	display: block;
+	height: 5px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 45px;
+}
+
 .project-footer {
-	height: 50px;
-	padding: 5px 10px;
-	background-color: black;
-	margin-bottom: 10px;
+	height: 45px;
+	padding: 8px 18px;
 	text-decoration: none;
-	text-align: left;
-	width: 500px;
-	margin-top: 5px;
+	bottom: 20px;
+	position: absolute;
+	width: calc(100% - 20px);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .project-name {
-	display: inline-block;
-	font-family: "Lato", sans-serif;
-	font-weight: 300;
 	font-size: 1.4em;
-	color: #3498db;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: white;
 	transition: .25s;
+	float: left;
 }
 
-.project-name:hover {
-	color: #2ecc71;
+.short-desc {
+	float: right;
+	color: #bdc3c7;
+	margin-top: 3px;
+}
+
+.short-desc:hover {
+	color: #bdc3c7;
 }
 
 .hackathon-24h {
-	background-image: url("http://cdn.williamtdr.com/williamtdr.com/24h.png");
+	background-image: url("http://cdn.tdr.moe/williamtdr.com/24h.png");
 	background-size: 100% 100%;
 	width: 25px;
 	height: 25px;
@@ -148,20 +190,10 @@
 }
 
 .project-image {
-	width: 500px;
+	width: 100%;
 	height: 320px;
 	background-size: cover;
 	background-position: center;
-}
-
-.icons > * {
-	margin-left: 10px;
-	color: white;
-	display: inline-block;
-}
-
-.icons > .fa {
-	font-size: 25px;
 }
 
 li > a {
@@ -169,28 +201,26 @@ li > a {
 }
 
 #bio-container > div > h3 {
-	color: #ecf0f1;
+	color: #b5d9fb;
 	text-transform: none;
 	text-align: left;
 	margin-bottom: 15px;
+	border-bottom: 1px dotted #95a5a6;
+	line-height: 1.8;
 }
 
 #bio-container > div > {
 	width: 100%;
 }
 
-#about {
+#activities {
 	padding-top: 50px !important;
 }
 
 .bio-listing {
-	font-family: "Lato", sans-serif;
 	padding-left: 0;
 	list-style-type: none;
 	text-align: left;
-}
-
-.bio-listing {
 	margin-bottom: 30px;
 }
 
@@ -201,25 +231,18 @@ li > a {
 
 .bio-content {
 	margin-top: 5px;
+	line-height: 1.7;
 }
 
 .bio-heading {
-	color: #bdc3c7;
+	color: #A2FBA9;
 	font-size: 1.4em;
 }
 
 @media(max-width: 768px) {
-	#about {
+	#activities {
 		height: auto;
 		padding-bottom: 15px;
-	}
-
-	.project {
-		width: 100%;
-	}
-
-	.project-image {
-		width: 100%;
 	}
 
 	.usage-instructions {

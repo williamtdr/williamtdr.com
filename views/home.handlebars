@@ -19,33 +19,22 @@
 				<li class="hidden">
 					<a href="#page-top"></a>
 				</li>
-				<li>
-					<a class="page-scroll" href="#about">About</a>
-				</li>
-				<li>
-					<a class="page-scroll" href="#projects">My Projects</a>
-				</li>
-				<li>
-					<a class="page-scroll" href="#tools">Tools</a>
-				</li>
+				<li><a class="page-scroll" href="#about">About</a></li>
+				<li><a class="page-scroll" href="#projects">My Projects</a></li>
+				<li><a class="page-scroll" href="#activities">Activities</a></li>
 			</ul>
 		</div>
-		<!-- /.navbar-collapse -->
 	</div>
-	<!-- /.container -->
 </nav>
 
 <!-- Intro Header -->
 <header class="intro">
 	<div class="intro-body">
 		<div class="container">
-			<!-- <div id="intro-left">
-				<img src="http://cdn.williamtdr.com/avatar.png" id="avatar">
-			</div> !-->
 			<div id="intro-right">
-				<h1 id="leading-heading" class="intro-heading">Hi, I'm William.</h1>
+				<h1 id="leading-heading" class="intro-heading">Hey, I'm William.</h1>
 				<p>
-					I'm a full stack web developer, utilizing node.js on the server side and HTML5 & CSS3 on the client-side to create interesting and unique web applications. I'm most known for my work on the Lifeboat server network, co-founding it and bringing it to over ten million registered players. For more information about my projects, see <a href="http://cdn.williamtdr.com/resume.pdf" target="_blank">my resumé</a>, or scroll down for a gallery.
+					I love making web apps, attending hackathons, and curating my music collection. I'm most known for my work on the <a href="http://cdn.tdr.moe/resume.pdf" target="_blank">Lifeboat Network</a> for Minecraft PE, co-founding it and bringing it to over ten million registered players. For more information about my professional work, see <a href="http://cdn.tdr.moe/resume.pdf" target="_blank">my resumé</a>. If you scroll down, I've picked out some of my favorite projects for you to check out. Thanks for stopping by!
 				</p>
 				<div class="social-links">
 					<a class="link-twitter" target="_blank" href="https://twitter.com/williamtdr"><i class="fa fa-twitter"></i></a>
@@ -63,10 +52,29 @@
 	</div>
 </header>
 
-<section id="about" class="container content-section text-center">
+<section id="projects" class="text-center">
+	<div class="project-section">
+		<div class="projects row">
+			{{#each projectsByAwesomeness}}
+				<div class="col-md-4">
+					<a href="/project/{{{this.id}}}" class="project" style="background-image: url('{{{this.thumbnail}}}')">
+						<div class="project-footer">
+							<div class="project-name">{{this.name}}</div>
+							<div class="short-desc">
+								SHORT DESC
+							</div>
+						</div>
+					</a>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</section>
+
+<section id="activities" class="container content-section text-center">
 	<div class="about-section">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2" id="bio-container">
+			<div class="col-lg-10 col-lg-offset-1" id="bio-container">
 				<div class="col-md-6">
 					<h3>Work History</h3>
 					<ul class="bio-listing">
@@ -106,14 +114,13 @@
 						<li>
 							<span class="bio-heading">FTC Robotics</span>
 							<div class="bio-content">
-								Lead programmer for Team #6369 Designosaurs for five years. Wrote code in ROBOTC and Java,
-								in the 2015-2016 season our team received a Judge's award for our programming.
+								Lead programmer for Team #6369 Designosaurs for six years. Wrote advanced computer vision algorithms to solve game challenges, and integrated sensor fusion systems for our autonomous period. During the 2016 season, I helped organize the team, managing expenses, organizing food for sessions when we went over dinner, and maintaining the space.
 							</div>
 						</li>
 						<li>
 							<span class="bio-heading">CodeDay</span>
 							<div class="bio-content">
-								Attended six events, organized one. Led five teams and said teams have won five awards.
+								Attended seven events, organized one. Led six teams and said teams have won five awards.
 								See some of our best projects in the gallery below.
 							</div>
 						</li>
@@ -123,59 +130,12 @@
 						<li>
 							<span class="bio-heading">Senior Year in High School</span>
 							<div class="bio-content">
-								Will attend full-time college classes through Normandale Community College this upcoming semester.
-								Using elective space to study Calculus and computer science.
+								Attending Normandale Community College through Minnesota's PSEO program, for concurrent HS and College enrollment. Studying Computer Science, Calculus and Humanities courses.
 							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section id="projects" class="text-center">
-	<div class="project-section">
-		<div class="container">
-			<h1>My Projects</h1>
-			<h3 class="usage-instructions">Click on a thumbnail for more information, including videos, screenshot galleries, and live demos.</h3>
-			<div class="projects row">
-				{{#each projectsByAwesomeness}}
-				<div class="project col-md-6">
-					<a href="/project/{{{this.id}}}">
-						<div class="project-image" style="background-image: url('{{{this.thumbnail}}}')"></div>
-						<div class="project-footer">
-							<div class="project-name">{{this.name}}</div>
-							<div class="icons">
-								<!-- <i class="hackathon-24h"></i> !-->
-							</div>
-						</div>
-					</a>
-				</div>
-				{{/each}}
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="tools" class="container text-center">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Tools</h2>
-			<p>Here are some self-hosted services I use to share content. Feel free to make use of them as well! Please make sure you own all rights to content posted.</p>
-			<ul class="list-inline banner-social-buttons">
-				<li>
-					<a href="http://s.tdr.moe/" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Link Shortener</span></a>
-				</li>
-				<!--
-				<li>
-					<a href="http://p.tdr.moe/" class="btn btn-default btn-lg"><i class="fa fa-files-o fa-fw"></i> <span class="network-name">Paste Bin</span></a>
-				</li>
-				<li>
-					<a href="http://i.tdr.moe/" class="btn btn-default btn-lg"><i class="fa fa-picture-o fa-fw"></i> <span class="network-name">Image Hosting</span></a>
-				</li>
-				!-->
-			</ul>
 		</div>
 	</div>
 </section>
