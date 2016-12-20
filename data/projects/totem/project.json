@@ -1,5 +1,6 @@
 {
 	"name": "Totem",
+	"short_desc": "Music Community",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/totem.png",
 	"yt_video": "xSlN0iv1f9M",
 	"order": {
@@ -7,7 +8,7 @@
 		"awesomeness": 9
 	},
 	"tools": ["gulp", "google api", "jQuery"],
-	"languages": ["javascript", "node.js", "php", "mysql", "css", "html"],
+	"languages": ["javascript", "node.js", "php", "sql", "css", "html"],
 	"tags": ["music"],
 	"source": "open"
 }

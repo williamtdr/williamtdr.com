@@ -1,5 +1,6 @@
 {
 	"name": "Harmony",
+	"short_desc": "Alexa Dashboard",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/harmony.png",
 	"order": {
 		"time": 10,

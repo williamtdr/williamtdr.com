@@ -1,5 +1,6 @@
 {
 	"name": "Math Drill",
+	"short_desc": "Practice Arithmetic",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/math_drill.png",
 	"order": {
 		"time": 4,

@@ -1,12 +1,13 @@
 {
 	"name": "SlideAlive",
+	"short_desc": "Presentation Generator",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/slidealive.png",
 	"order": {
 		"time": 3,
-		"awesomeness": 6
+		"awesomeness": 3
 	},
 	"tools": ["angularjs"],
-	"languages": ["php", "mysql", "python"],
-	"tags": ["codeday", "hackathon"],
+	"languages": ["php", "sql", "python"],
+	"tags": ["codeday", "hackathon", "natural language processing"],
 	"source": "open"
 }

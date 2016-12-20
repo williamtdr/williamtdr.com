@@ -1,10 +1,11 @@
 {
 	"name": "Animatch",
+	"short_desc": "Music Video Generator",
 	"yt_video": "3A2Ipm35GdE",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/animatch.png",
 	"order": {
 		"time": 6,
-		"awesomeness": 4
+		"awesomeness": 5
 	},
 	"tools": ["jQuery", "gulp", "bootstrap"],
 	"languages": ["javascript"],

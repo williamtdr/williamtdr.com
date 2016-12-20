@@ -1,10 +1,11 @@
 {
 	"name": "labyrinth14",
+	"short_desc": "Two-Player Maze Game",
 	"yt_video": "VWAkilqSRpw",
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/labyrinth14.png",
 	"order": {
 		"time": 8,
-		"awesomeness": 5
+		"awesomeness": 6
 	},
 	"tools": ["websockets", "jQuery", "bootstrap", "express", "node.js", "gulp"],
 	"languages": ["javascript", "ES6", "C#"],
