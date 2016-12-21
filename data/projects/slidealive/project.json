@@ -4,7 +4,7 @@
 	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/slidealive.png",
 	"order": {
 		"time": 3,
-		"awesomeness": 3
+		"awesomeness": 1
 	},
 	"tools": ["angularjs"],
 	"languages": ["php", "sql", "python"],

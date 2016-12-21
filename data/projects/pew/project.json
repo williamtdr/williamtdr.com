@@ -1,0 +1,13 @@
+{
+	"name": "Pew",
+	"short_desc": "AR Phone Game",
+	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/pew.jpg",
+	"order": {
+		"time": 12,
+		"awesomeness": 6
+	},
+	"tools": ["bing maps", "gulp", "express", "chrome location api", "websockets", "azure"],
+	"languages": ["node.js", "html", "css", "javascript"],
+	"tags": ["mhacks", "hackathon"],
+	"source": "closed"
+}
