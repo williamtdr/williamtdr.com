@@ -2,7 +2,7 @@
 	"name": "üBear",
 	"short_desc": "Self-Driving NXT Car",
 	"yt_video": "-lyjp-g73Do",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/ubear.jpg",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/ubear.jpg",
 	"order": {
 		"time": 12,
 		"awesomeness": 5

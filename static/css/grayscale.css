@@ -138,7 +138,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url("http://cdn.tdr.moe/williamtdr.com/img/bg_intro_header.jpg") no-repeat bottom center scroll;
+    background: url("https://cdn.tdr.moe/williamtdr.com/img/bg_intro_header.jpg") no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -256,7 +256,7 @@ a:focus {
     width: 100%;
     padding: 25px 0;
     color: #fff;
-	background: url("http://cdn.tdr.moe/williamtdr.com/img/underwater.jpg");
+	background: url("https://cdn.tdr.moe/williamtdr.com/img/underwater.jpg");
     -webkit-background-size: cover;
 	-moz-background-size: cover;
     background-size: cover;

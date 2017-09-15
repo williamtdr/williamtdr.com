@@ -1,7 +1,7 @@
 {
 	"name": "SlideAlive",
 	"short_desc": "Presentation Generator",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/slidealive.png",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/slidealive.png",
 	"order": {
 		"time": 3,
 		"awesomeness": 1

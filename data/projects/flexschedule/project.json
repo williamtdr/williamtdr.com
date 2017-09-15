@@ -1,7 +1,7 @@
 {
 	"name": "Flex Scheduler",
 	"short_desc": "Student Organization Tool",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/flex_schedule.png",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/flex_schedule.png",
 	"order": {
 		"time": 5,
 		"awesomeness": 2

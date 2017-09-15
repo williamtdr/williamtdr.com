@@ -6,7 +6,7 @@
 #avatar {
 	width: 180px;
 	height: 180px;
-	background-image: url("http://cdn.tdr.moe/avatar.png");
+	background-image: url("https://cdn.tdr.moe/avatar.png");
 	background-size: 100% 100%;
 	border-radius: 90px;
 	float: left;
@@ -177,7 +177,7 @@
 }
 
 .hackathon-24h {
-	background-image: url("http://cdn.tdr.moe/williamtdr.com/24h.png");
+	background-image: url("https://cdn.tdr.moe/williamtdr.com/24h.png");
 	background-size: 100% 100%;
 	width: 25px;
 	height: 25px;

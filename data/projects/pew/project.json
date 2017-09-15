@@ -1,7 +1,7 @@
 {
 	"name": "Pew",
 	"short_desc": "AR Phone Game",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/pew.jpg",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/pew.jpg",
 	"order": {
 		"time": 12,
 		"awesomeness": 6

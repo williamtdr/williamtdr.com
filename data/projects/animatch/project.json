@@ -2,7 +2,7 @@
 	"name": "Animatch",
 	"short_desc": "Music Video Generator",
 	"yt_video": "3A2Ipm35GdE",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/animatch.png",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/animatch.png",
 	"order": {
 		"time": 6,
 		"awesomeness": 5

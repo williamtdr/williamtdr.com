@@ -1,7 +1,7 @@
 {
 	"name": "Robotics",
 	"short_desc": "Team Programming",
-	"thumbnail": "http://cdn.tdr.moe/williamtdr.com/thumbnail/robotics.jpg",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/robotics.jpg",
 	"order": {
 		"time": 0,
 		"awesomeness": 9
