@@ -70,6 +70,10 @@
 	margin-top: 20px;
 }
 
+#intro-right > p > a:hover {
+	color: #e1e1e1;
+}
+
 .social-links {
 	text-align: left;
 }
