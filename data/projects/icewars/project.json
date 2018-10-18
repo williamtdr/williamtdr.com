@@ -1,0 +1,13 @@
+{
+	"name": "Ice Wars",
+	"short_desc": "Multiplayer Card Game",
+	"thumbnail": "https://cdn.tdr.moe/williamtdr.com/thumbnail/icewars.png",
+	"order": {
+		"time": 1,
+		"awesomeness": 10
+	},
+	"tools": ["websockets", "pixi.js", "sass", "websockets", "node.js"],
+	"languages": ["javascript"],
+	"tags": [],
+	"source": "closed"
+}
